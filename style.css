@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: none; /* 애니메이션 제거 */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #46b0f7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button i {
+    margin-right: 5px;
+}
+
+.button:hover {
+    background-color: #317daf;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer i {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer i:hover {
+    color: #b9b9b9;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode .header {
+    background-color: #222;
+}
+
+.dark-mode .container {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .button {
+    background-color: #46b0f7; /* 다크 모드에서도 버튼 색상 유지 */
+}
+
+.dark-mode .button:hover {
+    background-color: #317daf; /* 다크 모드에서도 호버 시 버튼 색상 유지 */
+}
+
+.dark-mode .footer {
+    background-color: #222;
+}
+
+#dark-mode-toggle {
+    color: #ffffff; /* 아이콘 색을 더 진하게 변경 */
+    transition: color 0.2s ease;
+}
+
+#dark-mode-toggle:hover {
+    color: #919191; /* 호버 시 색상 변경 */
+}
+
+.dark-mode #dark-mode-toggle {
+    color: #f4f4f4;
+}
+
+.dark-mode #dark-mode-toggle:hover {
+    color: #ccc;
+}
